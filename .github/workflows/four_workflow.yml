@@ -1,5 +1,6 @@
 name: push and manual workflow
 on: push
+    workflow_dispatch
 jobs:
   hello-job:
     runs-on: ubuntu-latest
