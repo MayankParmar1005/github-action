@@ -7,6 +7,14 @@ jobs:
     steps:
       - name: Get repo code on VM
         uses: actions/checkout@v4
-
+        
       - name: Validate html file (exist or not)
-        run: test -f home1.html
+        run: test -f home.html
+
+      - name: Validate js file (exist or not)
+        run: test -f script.js
+
+      - name: Validate js file code (is code proper or any error)
+        run: node --check script.js
+
+      
