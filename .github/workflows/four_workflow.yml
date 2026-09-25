@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "welcome"
-        run: echo "welcome to the hello-job"
+        run: echo "welcome to the hello-job."
   bye-job:
     runs-on: ubuntu-latest
     steps:
       - name: "bye"
-        run: echo "bye bye from bye job"
+        run: echo "bye bye from bye job."
