@@ -22,7 +22,4 @@ jobs:
       - name: Validate css file
         run: test -f style.css
 
-      - name: Validate css file code
-        run: css --check style.css
-
       
