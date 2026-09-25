@@ -1,5 +1,5 @@
 name: Validate workflow
-on: workflow_dispatch
+on: push
 jobs:
   file-validate:
     runs-on: "ubuntu-latest"
@@ -7,5 +7,6 @@ jobs:
     steps:
       - name: Get repo code on VM
         uses: actions/checkout@v4
+
       - name: Validate html file (exist or not)
-        run: test -f home.html
+        run: test -f home1.html
