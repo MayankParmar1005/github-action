@@ -8,13 +8,21 @@ jobs:
       - name: Get repo code on VM
         uses: actions/checkout@v4
         
+      # below step test if this file is exist or not?
       - name: Validate html file (exist or not)
         run: test -f home.html
 
       - name: Validate js file (exist or not)
         run: test -f script.js
 
+      # below step test if this file code is valid or not? means sytex.
       - name: Validate js file code (is code proper or any error)
         run: node --check script.js
+
+      - name: Validate css file
+        run: test -f style.css
+
+      - name: Validate css file code
+        run: css --check style.css
 
       
