@@ -15,7 +15,7 @@ jobs:
       - name: Validate js file (exist or not)
         run: test -f script.js
 
-      # below step test if this file code is valid or not? means sytex.
+      # below step test if this file code is valid or not? means syntex.
       - name: Validate js file code (is code proper or any error)
         run: node --check script.js
 
